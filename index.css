@@ -17,3 +17,23 @@ h1 {
 #message-el {
     font-style: italic;
 }
+
+button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    font-weight: 700;
+    font-size: 30px;
+    color: #016f32;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:active {
+    background-color: darkgoldenrod;
+  }
