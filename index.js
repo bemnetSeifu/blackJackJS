@@ -18,3 +18,4 @@ if (sum <= 20){
     isAlive = false
 } 
 console.log(message)
+
