@@ -1,11 +1,11 @@
 
 //adding an object
 let player = {
-    name: "Player",
+    name: "Per",
     chips: 500
 }
 
-//setiing the value of the array and sum to be null and the booloeans to false so that it won't initaialize with a random value before the game starts.
+//setting the value of the array and sum to be null and the booloeans to false so that it won't initaialize with a random value before the game starts.
 let cards = []
 let sum = 0
 let hasBlackJack = false
