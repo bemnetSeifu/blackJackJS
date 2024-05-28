@@ -1,4 +1,3 @@
-
 //adding an object
 let player = {
     name: "Player",
@@ -16,6 +15,12 @@ let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 
+playerEl.textContent = player.name + ": $" + player.chips
+
+
+let playerEl = document.getElementById("player-el")
+
+// 4. Render the player's name and chips in playerEl
 playerEl.textContent = player.name + ": $" + player.chips
 
 
