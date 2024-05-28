@@ -1,22 +1,20 @@
+
+//adding an object
 let player = {
     name: "Player",
     chips: 500
 }
+
+//setiing the value of the array and sum to be null and the booloeans to false so that it won't initaialize with a random value before the game starts.
 let cards = []
 let sum = 0
 let hasBlackJack = false
 let isAlive = false 
 let message = ""
-
 let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.getElementById("cards-el")
-
 let playerEl = document.getElementById("player-el")
-
-// 4. Render the player's name and chips in playerEl
-playerEl.textContent = player.name + ": $" + player.chips
-
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
@@ -28,7 +26,6 @@ function getRandomCard() {
         return randomNumber
     }
 }
-
 
 
 function startGame() {
@@ -43,6 +40,7 @@ function startGame() {
 function renderGame(){
     cardsEl.textContent = "Cards: "
 
+    //this will display the iterating random cards  
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " "
     }
@@ -64,6 +62,7 @@ function renderGame(){
 function newCard() {
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard()
+        //ensures that the sum updates its value with every new card 
         sum += card
         cards.push(card)
         renderGame()        
